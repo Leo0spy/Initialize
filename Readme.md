@@ -1,4 +1,4 @@
-﻿[logo]: assets/img/logo.jpg
+![alt text](https://github.com/Yanrs/Initialize/blob/master/assets/img/logo.jpg "Logo")
 
 # Initializer 
 
@@ -26,4 +26,4 @@ Crie um Issue
 ---
 # Configuração:
 O arquivo de configuração está localizado em `'application/config/initialize.php'`, nada mais deve ser modificado. 
-Certifique-se de preencher a linha `'base_url'`, deve ser a URL (completa) que leva ao CMS, por exemplo`'http://localhost/web/'`
+Certifique-se de preencher a linha `'base_url'`, deve conter a URL (completa) que leva ao CMS, por exemplo`'http://localhost/web/'`
