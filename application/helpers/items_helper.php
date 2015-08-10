@@ -1,0 +1,126 @@
+<?php
+
+if(!function_exists('item_type')){
+
+		function item_type($type)
+		{
+			switch($type)
+			{
+				case 1: echo 'Amuleto'; break;
+				case 2: echo 'Arco'; break;
+				case 3: echo 'Varinha'; break;
+				case 4: echo 'Cajado'; break;
+				case 5: echo 'Adaga'; break;
+				case 6: echo 'Espada'; break;
+				case 7: echo 'Martelo'; break;
+				case 8: echo 'Pá'; break;
+				case 9: echo 'Anel'; break;
+				case 10: echo 'Cinto'; break;
+				case 11: echo 'Bota'; break;
+				case 12: echo 'Poção'; break;
+				case 13: echo 'Pergaminho de experiência'; break;
+				case 14: echo 'Objet de dons'; break;
+				case 15: echo 'Recurso'; break;
+				case 16: echo 'Chapéu'; break;
+				case 17: echo 'Capa'; break;
+				case 18: echo 'Mascote'; break;
+				case 19: echo 'Machado'; break;
+				case 20: echo 'Ferramenta'; break;
+				case 21: echo 'Picareta'; break;
+				case 22: echo 'Falso'; break;
+				case 23: echo 'Dofus'; break;
+				case 24: echo 'Itens de Missão'; break;
+				case 25: echo 'Documento'; break;
+				case 26: echo 'Poção de forja magica'; break;
+				case 27: echo 'Objeto de Mutação'; break;
+				case 28: echo 'Nourriture boost'; break;
+				case 29: echo 'Bénédiction'; break;
+				case 30: echo 'Malédiction'; break;
+				case 31: echo 'Roleplay Buff'; break;
+				case 32: echo 'Personnage suiveur'; break;
+				case 33: echo 'Pain'; break;
+				case 34: echo 'Céréale'; break;
+				case 35: echo 'Fleur'; break;
+				case 36: echo 'Plante'; break;
+				case 37: echo 'Bière'; break;
+				case 38: echo 'Bois'; break;
+				case 39: echo 'Minerai'; break;
+				case 40: echo 'Alliage'; break;
+				case 41: echo 'Poisson'; break;
+				case 42: echo 'Friandise'; break;
+				case 43: echo 'Potion d\'oubli de sort'; break;
+				case 44: echo 'Potion d\'oubli de métier'; break;
+				case 45: echo 'Potion d\'oubli de maîtrise'; break;
+				case 46: echo 'Fruit'; break;
+				case 47: echo 'Os'; break;
+				case 48: echo 'Poudre'; break;
+				case 49: echo 'Poisson comestible'; break;
+				case 50: echo 'Pierre préciseuse'; break;
+				case 51: echo 'Pierre brute'; break;
+				case 52: echo 'Farine'; break;
+				case 53: echo 'Plume'; break;
+				case 54: echo 'Poil'; break;
+				case 55: echo 'Etoffe'; break;
+				case 56: echo 'Cuir'; break;
+				case 57: echo 'Laine'; break;
+				case 58: echo 'Graine'; break;
+				case 59: echo 'Peau'; break;
+				case 60: echo 'Huile'; break;
+				case 61: echo 'Peluche'; break;
+				case 62: echo 'Poisson vidé'; break;
+				case 63: echo 'Viande'; break;
+				case 64: echo 'Viande conservé'; break;
+				case 65: echo 'Queue'; break;
+				case 66: echo 'Metaria'; break;
+				case 68: echo 'Légume'; break;
+				case 69: echo 'Viande comestible'; break;
+				case 70: echo 'Teinture'; break;
+				case 71: echo 'Matériel d\'alchimie'; break;
+				case 72: echo 'Oeuf de familier'; break;
+				case 73: echo 'Maîtrise'; break;
+				case 74: echo 'Fée d\'artifice'; break;
+				case 75: echo 'Parchemin de sort'; break;
+				case 76: echo 'Parchemin de caractéristique'; break;
+				case 77: echo 'Certificat de mise en chanil'; break;
+				case 78: echo 'Rune de forgemagie'; break;
+				case 79: echo 'Boisson'; break;
+				case 80: echo 'Objet de misson'; break;
+				case 81: echo 'Sac à dos'; break;
+				case 82: echo 'Bouclier'; break;
+				case 83: echo 'Pierre d\'âme'; break;
+				case 84: echo 'Clefs'; break;
+				case 85: echo 'Pierre d\'âme pleine'; break;
+				case 86: echo 'Potion d\'oubli percepteur'; break;
+				case 87: echo 'Parchemin de recherche'; break;
+				case 88: echo 'Pierre magique'; break;
+				case 89: echo 'Cadeaux'; break;
+				case 90: echo 'Fantôme de familier'; break;
+				case 91: echo 'Dragodinde'; break;
+				case 92: echo 'Bouftou'; break;
+				case 93: echo 'Objet d\'élevage'; break;
+				case 94: echo 'Objet utilisable'; break;
+				case 95: echo 'Planche'; break;
+				case 96: echo 'Ecorce'; break;
+				case 97: echo 'Certificat de monture'; break;
+				case 98: echo 'Racine'; break;
+				case 99: echo 'Filet de capture'; break;
+				case 100: echo 'Sac de ressources'; break;
+				case 102: echo 'Arbalète'; break;
+				case 103: echo 'Patte'; break;
+				case 104: echo 'Aile'; break;
+				case 105: echo 'Oeuf'; break;
+				case 106: echo 'Oreille'; break;
+				case 107: echo 'Carapace'; break;
+				case 108: echo 'Bourgeon'; break;
+				case 109: echo 'Oeil'; break;
+				case 110: echo 'Gelée'; break;
+				case 111: echo 'Coquille'; break;
+				case 112: echo 'Prisme'; break;
+				case 113: echo 'Objet vivant'; break;
+				case 114: echo 'Arme magique'; break;
+				case 115: echo 'Fragment d\'âme de Shushu'; break;
+				case 116: echo 'Potion de familier'; break;
+				default: echo 'Inconnu (type '.$type.')'; break;
+			}
+		}
+	}

@@ -1,0 +1,1 @@
+<div id="starpass_<?= $this->config->item('starpass_id') ?>"></div><script type="text/javascript" src="http://script.starpass.fr/script.php?idd=<?= $this->config->item('starpass_id') ?>&amp;verif_en_php=1&amp;datas="></script><noscript>Veuillez activer le Javascript de votre navigateur s'il vous pla&icirc;t.<br /></noscript>
