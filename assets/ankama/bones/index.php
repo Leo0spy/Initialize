@@ -1,0 +1,1 @@
+<?php if(!defined('USEPATH')) exit('<center><h1><b>No direct script access allowed.</b></h1></center>'); ?>
