@@ -4,9 +4,9 @@
 
 CMS Direcionado a Servidores Dofus 2.0+
 Desenvolvido com Codeigniter (Framework PHP)
-## Características: do CMS
+## Características:
 
-> -  Paginas (Jogar, Logar, Registrar e etc...) 
+> -  Páginas (Jogar, Logar, Registrar e etc...) 
 > -  Gerenciar contas. 
 > -  Recuperar Senha. 
 > -  Ranking  PvM ,  PvP ,  Guilda e Votos . 
@@ -16,9 +16,9 @@ Desenvolvido com Codeigniter (Framework PHP)
 
 ## Em breve:
 > - Painel Admin.
-> - Compra de pontos (implementação em breve). 
+> - Compra de pontos. 
 > - Página estatísticas.
-> - Página de Mídias ( Screenshots e vídeos ).
+> - Página de Mídias (Screenshots e vídeos).
 
 Tem uma sugestão, uma ideia para melhorar o CMS?
 Crie um Issue
