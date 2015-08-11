@@ -1,6 +1,6 @@
 ![alt text](https://github.com/Yanrs/Initialize/blob/master/assets/img/logo.jpg "Logo")
 
-# Initializer 
+# Initialize 
 
 CMS Direcionado a Servidores Dofus 2.0+
 Desenvolvido com Codeigniter (Framework PHP)
