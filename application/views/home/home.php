@@ -20,11 +20,11 @@
     <div class="container">
         <div class="row">
             <div class="col-md-9 animated fadeInLeft">
-                <span>Envie d'une nouvelle aventure ?</span>
-				<p>Si c'est le cas alors suivez la démarche pour <b>nous rejoindre</b> par ici grâce au bouton suivant</p>
+                <span>Gostaria de uma nova aventura ?</span>
+				<p>Se for este o caso, então venha <b>jogar conosco!</b></p>
             </div>            
             <div class="col-md-3 btn-buy animated fadeInRight">
-                <a href="<?= site_url('home/join'); ?>" class="btn-u btn-u-lg"><i class="fa fa-cloud-download"></i> Rejoindre <?= $this->config->item('name'); ?></a>
+                <a href="<?= site_url('home/join'); ?>" class="btn-u btn-u-lg"><i class="fa fa-cloud-download"></i> Jogar <?= $this->config->item('name'); ?></a>
             </div>
         </div>
     </div>

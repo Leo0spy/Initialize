@@ -3,8 +3,8 @@
         <div class="container">
             <h1 class="pull-left">Blog</h1>
             <ul class="pull-right breadcrumb">
-                <li><a href="<?= base_url(); ?>">Accueil</a></li>
-                <li><a>Communauté</a></li>
+                <li><a href="<?= base_url(); ?>">Home</a></li>
+                <li><a>Comunidade</a></li>
                 <li class="active">Blog</li>
             </ul>
         </div>
@@ -24,7 +24,7 @@
                     <div class="timeline-body text-justify">
                         <h2 class="font-light"><a href="<?= site_url('blog/view/'.get($new->id)); ?>"><?= get($new->title); ?></a></h2>
                         <p><?= limit_text(get($new->content)); ?></p>
-                        <a class="btn-u btn-u-sm" href="<?= site_url('blog/view/'.get($new->id)); ?>">Read More</a>
+                        <a class="btn-u btn-u-sm" href="<?= site_url('blog/view/'.get($new->id)); ?>">Ler Mais</a>
                     </div>
                     <div class="timeline-footer">
                         <ul class="list-unstyled list-inline blog-info">
@@ -43,4 +43,4 @@
             <?= pagination(site_url('blog/home'), $nbr_page, $current); ?>
         </div>  
     </div><!--/container-->		
-    <!-- End Content Part -->
+    <!-- End Content Part -->   

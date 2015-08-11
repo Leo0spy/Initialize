@@ -1,12 +1,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
-<HTML xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" > 
+<HTML xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" > 
 	<head>
 		<title><?= $obj->config->item('name'); ?> | <?= $obj->config->item('title'); ?></title>
     	<!-- Meta -->
     	<meta charset="utf-8">
     	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    	<meta name="description" content="<?= $obj->config->item('name'); ?> - Serveur privé Dofus 1.29.">
-    	<meta name="author" content="Liox | Agora">
+    	<meta name="description" content="<?= $obj->config->item('name'); ?> - Servidor Dofus.">
+    	<meta name="author" content="Skytrust">
     	<!-- Favicon -->
     	<link rel="shortcut icon" href="<?= img_url('favicon.ico'); ?>">
     	<!-- CSS Global Compulsory -->
@@ -48,9 +48,9 @@
                 	<ul class="loginbar pull-right">
                     	<li class="languagesSelector">
                         	<i class="fa fa-globe"></i>
-                        	<a>Langues</a>
+                        	<a>Idioma</a>
                         	<ul class="languages">
-                            	<li class="active"><a href="#">Français <i class="fa fa-check"></i></a></li>
+                            	<li class="active"><a href="#">Português <i class="fa fa-check"></i></a></li>
                         	</ul>
                     	</li>
                     	<li class="topbar-devider"></li>   
@@ -59,12 +59,12 @@
                     	<li><a href="index.php?p=ticket"><i class="fa fa-ticket"></i> Ticket</a></li>
                     	<?php if($obj->session->userdata('guid')){ ?>
                     	<li class="topbar-devider"></li>
-						<li><a href="<?= site_url('user/account'); ?>"><i class="fa fa-user"></i> Mon compte</a></li>
+						<li><a href="<?= site_url('user/account'); ?>"><i class="fa fa-user"></i> Minha conta</a></li>
 						<li class="topbar-devider"></li>
-						<li><a href="<?= site_url('user/logout'); ?>"><i class="fa fa-user-times"></i> Se déconnecter</a></li> 
+						<li><a href="<?= site_url('user/logout'); ?>"><i class="fa fa-user-times"></i> Logout</a></li> 
 						<?php } else{ ?> 
 						<li class="topbar-devider"></li> 
-                    	<li><a href="<?= site_url('user/login'); ?>"><i class="fa fa-unlock"></i> Se Connecter</a></li>  
+                    	<li><a href="<?= site_url('user/login'); ?>"><i class="fa fa-unlock"></i> Login</a></li>  
                     	<?php } ?> 
                 	</ul>
                 	<!-- End Topbar Navigation -->
@@ -89,57 +89,57 @@
                     	<ul class="nav navbar-nav">
                         	<!-- Home -->
                         	<li class="active">
-                            	<a href="<?= base_url(); ?>">Accueil</a>
+                            	<a href="<?= base_url(); ?>">Home</a>
                         	</li>
                         	<!-- End of home -->
                         	<!-- Users -->                        
                         	<li class="dropdown">
-                            	<a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Utilisateur</a>
+                            	<a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Usuário</a>
                             	<ul class="dropdown-menu">
                             		<?php if(!$obj->session->userdata('guid')){ ?>
-                                	<li><a href="<?= site_url('user/login'); ?>"><i class="fa fa-unlock"></i> Se connecter</a></li>
-									<li><a href="<?= site_url('user/register'); ?>"><i class="fa fa-reorder"></i> S'inscrire</a></li>
+                                	<li><a href="<?= site_url('user/login'); ?>"><i class="fa fa-unlock"></i> Login</a></li>
+									<li><a href="<?= site_url('user/register'); ?>"><i class="fa fa-reorder"></i> Registrar</a></li>
 									<?php } else{ ?>
-									<li><a href="<?= site_url('user/account'); ?>"><i class="fa fa-user"></i> Mon compte</a></li>
-									<li><a href="<?= site_url('user/logout'); ?>"><i class="fa fa-user-times"></i> Se déconnecter</a></li>
+									<li><a href="<?= site_url('user/account'); ?>"><i class="fa fa-user"></i> Minha conta</a></li>
+									<li><a href="<?= site_url('user/logout'); ?>"><i class="fa fa-user-times"></i> Logout</a></li>
 									<?php } ?>
                             	</ul>
                         	</li>
                         	<!-- End of users -->
 							<!-- Encyclopedia -->                        
                         	<li class="dropdown">
-                            	<a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Encyclopédie</a>
+                            	<a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Enciclopédia</a>
                             	<ul class="dropdown-menu">
-									<li><a href="index.php?p=monsters"><i class="fa fa-book"></i> Bestiaire</a></li>
-									<li><a href="index.php?p=item"><i class="fa fa-trophy"></i> Equipements</a></li>
-                                	<li><a href="index.php?p=itemset"><i class="fa fa-bookmark"></i> Panoplies</a></li>
-									<li><a href="index.php?p=search"><i class="fa fa-search"></i> Recherche</a></li>
+									<li><a href="index.php?p=monsters"><i class="fa fa-book"></i> Monstros</a></li>
+									<li><a href="index.php?p=item"><i class="fa fa-trophy"></i> Equipamentos</a></li>
+                                	<li><a href="index.php?p=itemset"><i class="fa fa-bookmark"></i> Sets</a></li>
+									<li><a href="index.php?p=search"><i class="fa fa-search"></i> Pesquisar</a></li>
                             	</ul>
                         	</li>
                         	<!-- End of Encyclopedia -->
 							<!-- Community -->                        
                         	<li class="dropdown">
-                            	<a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Communauté</a>
+                            	<a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Comunidade</a>
                             	<ul class="dropdown-menu">
-                                	<li><a href="<?= site_url('home/join'); ?>"><i class="fa fa-desktop"></i> Nous rejoindre</a></li>
-									<li><a href="<?= site_url('ladder/'); ?>"><i class="fa fa-trophy"></i> Les classements</a></li>
-									<li><a href="<?= site_url('home/staff'); ?>"><i class="fa fa-users"></i> L'équipe</a></li>
-									<li><a href="<?= $obj->config->item('link_forum'); ?>"><i class="fa fa-comments"></i> Notre forum</a></li>
+                                	<li><a href="<?= site_url('home/join'); ?>"><i class="fa fa-desktop"></i> Jogar</a></li>
+									<li><a href="<?= site_url('ladder/'); ?>"><i class="fa fa-trophy"></i> Ranking</a></li>
+									<li><a href="<?= site_url('home/staff'); ?>"><i class="fa fa-users"></i> Equipe</a></li>
+									<li><a href="<?= $obj->config->item('link_forum'); ?>"><i class="fa fa-comments"></i> Forum</a></li>
                             	</ul>
                         	</li>
                         	<!-- End of community -->
 							<!-- Support -->                        
                         	<li class="dropdown">
-                            	<a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Assistance</a>
+                            	<a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Suporte</a>
                             	<ul class="dropdown-menu">
                                 	<li><a href="index.php?p=faq"><i class="fa fa-info"></i> FAQ</a></li>
-									<li><a href="index.php?p=bugtracker"><i class="fa fa-bug"></i> Bugtracker</a></li>
+									<li><a href="index.php?p=bugtracker"><i class="fa fa-bug"></i> Bugs</a></li>
                             	</ul>
                         	</li>
                         	<!-- End of support -->
 							<!-- Vote -->
                         	<li>
-                            	<a href="<?= site_url('points/vote'); ?>">Voter</a>
+                            	<a href="<?= site_url('points/vote'); ?>">Votar</a>
                         	</li>
                         	<!-- End of vote -->
                     	</ul>
@@ -153,12 +153,12 @@
 		<i class="style-switcher-btn fa fa-cogs hidden-xs"></i>
 		<div class="style-switcher animated fadeInRight">
     		<div class="style-swticher-header">
-        		<div class="style-switcher-heading">Thèmes</div>            
+        		<div class="style-switcher-heading">Temas</div>            
         		<div class="theme-close"><i class="icon-close"></i></div>
     		</div>
     		<div class="style-swticher-body">
         		<!-- Theme Colors -->
-        		<div class="style-switcher-heading">Couleurs disponibles :</div>
+        		<div class="style-switcher-heading">Cores disponíveis :</div>
         		<ul class="list-unstyled">
            			<li class="theme-default theme-active" data-style="default" data-header="light"></li>
             		<li class="theme-blue" data-style="blue" data-header="light"></li>
@@ -185,7 +185,7 @@
             <div class="col-md-offset-2 col-md-8">
             <div class="alert alert-<?= $type_e; ?>" role="alert">
                 <span class="fa fa-<?= $icon; ?>" aria-hidden="true"></span>
-                <span class="sr-only">Error:</span>
+                <span class="sr-only">Erro:</span>
                 <?= $message; ?>
             </div>
             </div>
@@ -200,8 +200,8 @@
             	<div class="container">
                 	<div class="row">
                     	<div class="col-md-6">                     
-                        	<p>2015 &copy; <?= $obj->config->item('name'); ?> code by Liox, tous droit réservés.
-                           	<a href="<?= site_url('home/cgu'); ?>">CGU</a>
+                        	<p>2015 &copy; <?= $obj->config->item('name'); ?> code by Liox et Skytrust, All rights reserved.
+                           	<a href="<?= site_url('home/cgu'); ?>">TDU</a>
                         	</p>
                     	</div>
                     	<!-- Social Links -->

@@ -1,12 +1,12 @@
     <!--=== Breadcrumbs ===-->
     <div class="breadcrumbs">
         <div class="container">
-            <h1 class="pull-left">Article</h1>
+            <h1 class="pull-left">Artigo</h1>
             <ul class="pull-right breadcrumb">
-                <li><a href="<?= base_url(); ?>">Accueil</a></li>
-                <li><a>Communauté</a></li>
+                <li><a href="<?= base_url(); ?>">Home</a></li>
+                <li><a>Comunidade</a></li>
                 <li><a href="<?= site_url('blog/'); ?>">Blog</a></li>
-                <li class="active">Article</li>
+                <li class="active">Artigo</li>
             </ul>
         </div>
     </div><!--/breadcrumbs-->
@@ -63,16 +63,16 @@
                 <?php if($this->session->has_userdata('Id')){ ?>
                 <!-- Comment Form -->
                 <div class="post-comment">
-                	<h3>Laisser un commentaire</h3>
+                	<h3>Postar comentário</h3>
                     <form method="post" action="">
-                        <label>Message</label>
+                        <label>Mensagem</label>
                         <div class="row margin-bottom-20">
                             <div class="col-md-11 col-md-offset-0">
-                                <textarea class="form-control" rows="8" name="content" placeholder="Votre message..."></textarea>
+                                <textarea class="form-control" rows="8" name="content" placeholder="Sua Mensagem..."></textarea>
                             </div>                
                         </div>
                         
-                        <p><button class="btn-u" type="submit" name="send">Envoyer</button></p>
+                        <p><button class="btn-u" type="submit" name="send">Enviar</button></p>
                     </form>
                 </div>
                 <!-- End Comment Form -->
@@ -84,7 +84,7 @@
             <div class="col-md-4 magazine-page">
                 <!-- Posts -->
                 <div class="posts margin-bottom-40">
-                    <div class="headline headline-md"><h2>Actualités récentes</h2></div>
+                    <div class="headline headline-md"><h2>Atualizações recentes</h2></div>
 
                     <?php foreach($last_news as $last){ ?>
                     <div class="magazine-posts col-md-12 col-sm-6 margin-bottom-30">

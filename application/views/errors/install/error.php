@@ -1,12 +1,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
 <HTML xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" > 
 	<head>
-		<title>Initialize'CMS | Installation</title>
+		<title>Initialize CMS | Instalação</title>
     	<!-- Meta -->
     	<meta charset="utf-8">
     	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    	<meta name="description" content="<?= $obj->config->item('name'); ?> - Serveur privé Dofus 1.29.">
-    	<meta name="author" content="Liox | Agora">
+    	<meta name="description" content="<?= $obj->config->item('name'); ?> - Servidor Dofus">
+    	<meta name="author" content="Skytrust">
     	<!-- Favicon -->
     	<link rel="shortcut icon" href="<?= img_url('favicon.ico'); ?>">
     	<!-- CSS Global Compulsory -->
@@ -48,13 +48,13 @@
                 	<ul class="loginbar pull-right">
                     	<li class="languagesSelector">
                         	<i class="fa fa-globe"></i>
-                        	<a>Langues</a>
+                        	<a>Idioma</a>
                         	<ul class="languages">
-                            	<li class="active"><a href="#">Français <i class="fa fa-check"></i></a></li>
+                            	<li class="active"><a href="#">Português <i class="fa fa-check"></i></a></li>
                         	</ul>
                     	</li>
                     	<li class="topbar-devider"></li>   
-                    	<li><a><i class="fa fa-info"></i> Installation</a></li>  
+                    	<li><a><i class="fa fa-info"></i> Instalação</a></li>  
                 	</ul>
                 	<!-- End Topbar Navigation -->
             	</div>
@@ -78,7 +78,7 @@
                     	<ul class="nav navbar-nav">
                         	<!-- Home -->
                         	<li class="active">
-                            	<a>Installation</a>
+                            	<a>Instalação</a>
                         	</li>
                         	<!-- End of home -->
                     	</ul>
@@ -95,7 +95,7 @@
             <div class="col-md-offset-2 col-md-8">
             <div class="alert alert-<?= $type_e; ?>" role="alert">
                 <span class="fa fa-<?= $icon; ?>" aria-hidden="true"></span>
-                <span class="sr-only">Error:</span>
+                <span class="sr-only">Erro:</span>
                 <?= $message; ?>
             </div>
             </div>
@@ -110,7 +110,7 @@
             	<div class="container">
                 	<div class="row">
                     	<div class="col-md-6">                     
-                        	<p>2015 &copy; Initialize'CMS code by Liox, tous droit réservés.
+                        	<p>2015 &copy; Initialize CMS code by Liox et Skytrust, All rights reserved.
                         	</p>
                     	</div>
                 	</div>

@@ -1,11 +1,11 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
-<HTML xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" > 
+<HTML xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" > 
 	<head>
 		<title><?= $this->config->item('name'); ?> | <?= $this->config->item('title'); ?></title>
     	<!-- Meta -->
     	<meta charset="utf-8">
     	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    	<meta name="description" content="<?= $this->config->item('name'); ?> - Servidor Dofus 2.10.">
+    	<meta name="description" content="<?= $this->config->item('name'); ?> - Servidor Dofus">
     	<meta name="author" content="Skytrust">
     	<!-- Favicon -->
     	<link rel="shortcut icon" href="<?= img_url('favicon.ico'); ?>">
@@ -97,7 +97,7 @@
                         	<!-- End of home -->
                         	<!-- Users -->                        
                         	<li class="dropdown">
-                            	<a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Utilisateur</a>
+                            	<a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Usuário</a>
                             	<ul class="dropdown-menu">
                             		<?php if(!$this->session->has_userdata('Id')){ ?>
                                 	<li><a href="<?= site_url('user/login'); ?>"> Login</a></li>
@@ -122,7 +122,7 @@
 									<li><a href="<?= site_url('ladder/'); ?>"> Ranking</a></li>
 									<li><a href="<?= site_url('home/staff'); ?>"> Equipe</a></li>
                                     <li><a href="<?= site_url('blog/'); ?>"> Blog</a></li>
-									<li><a href="<?= $this->config->item('link_forum'); ?>"> Nosso Forum</a></li>
+									<li><a href="<?= $this->config->item('link_forum'); ?>"> Forum</a></li>
                             	</ul>
                         	</li>
                         	<!-- End of community -->
