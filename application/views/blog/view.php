@@ -38,7 +38,7 @@
     			<hr>
 
                 <div class="media">
-                    <h3>Commentaires (<?= $this->BlogManager->count_comments(get($news->id)); ?>)</h3>
+                    <h3>Comentários (<?= $this->BlogManager->count_comments(get($news->id)); ?>)</h3>
                 </div>
                 <!-- Recent Comments -->
                 <?php foreach($comments as $comment){ ?>

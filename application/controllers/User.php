@@ -94,26 +94,26 @@ class User extends CI_Controller {
 					show_msg('2', 'Login incorreto.', site_url('user/register'), '3');
 				}
 				elseif(strlen($question) < 4 || strlen($answer) < 4){
-					show_msg('2', 'Pergunta incorreta.', site_url('user/register'), '3');
+					show_msg('2', 'Pergunta inválida.', site_url('user/register'), '3');
 				}
 				elseif(strlen($pseudo) < 4){
-					show_msg('2', 'Apelido incorreto.', site_url('user/register'), '3');
+					show_msg('2', 'Apelido inválido.', site_url('user/register'), '3');
 				}
 				elseif(strlen($pass) < 4){
 					show_msg('2', 'Senha incorreta.', site_url('user/register'), '3');
 				}
 				else{
 					if($this->UserManager->already_mail($email) == TRUE){
-						show_msg('2', 'Email incorreto.', site_url('user/register'), '3');
+						show_msg('2', 'Email já cadastrado.', site_url('user/register'), '3');
 					}
 					elseif($this->UserManager->already_login($login) == TRUE){
-						show_msg('2', 'Login incorreto.', site_url('user/register'), '3');
+						show_msg('2', 'Login já cadastrado.', site_url('user/register'), '3');
 					}
 					elseif($this->UserManager->already_pseudo($pseudo) == TRUE){
-						show_msg('2', 'Apelido incorreto.', site_url('user/register'), '3');
+						show_msg('2', 'Apelido já cadastrado.', site_url('user/register'), '3');
 					}
 					elseif(verif_mail($email) == FALSE){
-						show_msg('2', 'Email incorreto.', site_url('user/register'), '3');
+						show_msg('2', 'Email inválido.', site_url('user/register'), '3');
 					}
 					else{
 						$this->UserManager->add_account($login, md5($pass), $pseudo, $email, $question, $answer);
