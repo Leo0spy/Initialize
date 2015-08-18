@@ -1,11 +1,11 @@
     <!--=== Breadcrumbs ===-->
     <div class="breadcrumbs">
         <div class="container">
-            <h1 class="pull-left">Les classements</h1>
+            <h1 class="pull-left">O Ranking</h1>
             <ul class="pull-right breadcrumb">
-                <li><a href="<?= base_url(); ?>">Accueil</a></li>
-                <li><a>Communauté</a></li>
-                <li class="active">Ladder</li>
+                <li><a href="<?= base_url(); ?>">Home</a></li>
+                <li><a>Comunidade</a></li>
+                <li class="active">Ranking</li>
             </ul>
         </div>
     </div><!--/breadcrumbs-->
@@ -19,27 +19,27 @@
                     <li><a href="<?= site_url('ladder/pvm'); ?>">PVM</a></li>
                     <li class="active"><a>PVP</a></li>
                     <?php if($this->config->item('ladder_guilds') == TRUE){ ?>
-                    <li><a href="<?= site_url('ladder/guild'); ?>">Guildes</a></li>
+                    <li><a href="<?= site_url('ladder/guild'); ?>">Guildas</a></li>
                     <?php } ?>
-                    <li><a href="<?= site_url('ladder/vote'); ?>">Votes</a></li>
+                    <li><a href="<?= site_url('ladder/vote'); ?>">Votos</a></li>
                 </ul>
             </div>
 
             <br/>
             <div class="panel panel-red margin-bottom-40">
                 <div class="panel-heading">
-                    <h3 class="panel-title">Ladder <b>PvP</b></h3>
+                    <h3 class="panel-title">Ranking <b>PvP</b></h3>
                 </div>
                 <div class="panel-body">
                     <table class="table table-striped">
                         <thead>
                             <tr>
                                 <th><center>#</center></th>
-                                <th>Personnnage</th>
+                                <th>Personagem</th>
                                 <th>Classe</th>
                                 <th>Level</th>
-                                <th><center>Alignement</center></th>
-                                <th>Honneur</th>
+                                <th><center>Alinhamento</center></th>
+                                <th>Honra</th>
                             </tr>
                         </thead>
                         <tbody>

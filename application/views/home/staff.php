@@ -1,11 +1,11 @@
     <!--=== Breadcrumbs ===-->
     <div class="breadcrumbs">
         <div class="container">
-            <h1 class="pull-left">L'équipe de <?= $this->config->item('name'); ?></h1>
+            <h1 class="pull-left">A Equipe <?= $this->config->item('name'); ?></h1>
             <ul class="pull-right breadcrumb">
-                <li><a href="<?= site_url('support/faq'); ?>">Accueil</a></li>
-                <li><a>Communauté</a></li>
-                <li class="active">L'équipe</li>
+                <li><a href="<?= site_url('support/faq'); ?>">Home</a></li>
+                <li><a>Comunidade</a></li>
+                <li class="active">Equipe</li>
             </ul>
         </div>
     </div><!--/breadcrumbs-->
@@ -15,7 +15,7 @@
     <div class="container content">	
 	   <div class="row team">
             <div class="alert alert-info fade in">
-                <strong>Information!</strong> Ici, sont repertoriés tout les membres de l'équipe formant <?= $this->config->item('name'); ?>.
+                <strong>Informação!</strong> Todos os integrantes da equipe <?= $this->config->item('name'); ?> estão listados aqui.
             </div>  
 
             <?php foreach($staffs as $staff){ ?>

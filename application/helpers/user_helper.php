@@ -21,7 +21,7 @@ if(!function_exists('account_role')){
 		switch($level)
 		{
 			case 0: return 'Jogador'; break;
-			case 1: return 'Animador'; break;
+			case 1: return 'Jogador'; break;
 			case 2: return 'Moderador'; break;
 			case 3: return 'Moderador Master'; break;
 			case 4: return 'Desenvolvedor'; break;

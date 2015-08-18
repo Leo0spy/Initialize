@@ -1,11 +1,11 @@
     <!--=== Breadcrumbs ===-->
     <div class="breadcrumbs">
         <div class="container">
-            <h1 class="pull-left">Les classements</h1>
+            <h1 class="pull-left">O Ranking</h1>
             <ul class="pull-right breadcrumb">
-                <li><a href="<?= base_url(); ?>">Accueil</a></li>
-                <li><a>Communauté</a></li>
-                <li class="active">Ladder</li>
+                <li><a href="<?= base_url(); ?>">Home</a></li>
+                <li><a>Comunidade</a></li>
+                <li class="active">Ranking</li>
             </ul>
         </div>
     </div><!--/breadcrumbs-->
@@ -18,26 +18,26 @@
                 <ul class="nav nav-tabs">
                     <li><a href="<?= site_url('ladder/pvm'); ?>">PVM</a></li>
                     <li><a href="<?= site_url('ladder/pvp'); ?>">PVP</a></li>
-                    <li class="active"><a>Guildes</a></li>
-                    <li><a href="<?= site_url('ladder/vote'); ?>">Votes</a></li>
+                    <li class="active"><a>Guildas</a></li>
+                    <li><a href="<?= site_url('ladder/vote'); ?>">Votos</a></li>
                 </ul>
             </div>
 
             <br/>
             <div class="panel panel-red margin-bottom-40">
                 <div class="panel-heading">
-                    <h3 class="panel-title">Ladder <b>Guildes</b></h3>
+                    <h3 class="panel-title">Ranking <b>Guildas</b></h3>
                 </div>
                 <div class="panel-body">
                     <table class="table table-striped">
                         <thead>
                             <tr>
                                 <th><center>#</center></th>
-                                <th>Nom</th>
-                                <th><center>Emblème</center></th>
+                                <th>Nome</th>
+                                <th><center>Emblema</center></th>
                                 <th>Level</th>
-                                <th>Expérience</th>
-                                <th>Membres</th>
+                                <th>Experiência</th>
+                                <th>Membros</th>
                             </tr>
                         </thead>
                         <tbody>

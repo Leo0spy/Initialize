@@ -66,8 +66,8 @@
 			</div>
 			<br/>
 			<div class="headline"><h2>Suporte & FAQ</h2></div>
-				<p>Un problème qui subsiste ?<br/><br/>
-				Faîtes un tour sur notre FAQ, si celle-ci ne vous apporte pas la solution, postez un ticket ou un sujet sur notre forum.
+				<p>Ainda com problemas ?<br/><br/>
+				Consulte nosso FAQ, se continuar sem respostas para seu problema abra um ticket ou consulte nosso forum.
 				</p><br/>
 				<center>
 				<a rel="round-corners" class="btn-u btn-u-red round-corners" href="<?= site_url('support/faq'); ?>"><i class="fa fa-info"></i> FAQ</a>
